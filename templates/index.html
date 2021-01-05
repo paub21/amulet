@@ -1,0 +1,30 @@
+<html>
+<title>Amulet Classification</title>
+<!-- stylesheets -->
+<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+<div class="row">
+ 
+  <div class="col-md-7">
+    <h1> Amulet Classification (V0.1)</h1>
+	<p style="margin-left:0.5%;">คัดแยกเหรียญหลวงพ่อสุด 4 รุ่น (เสือหมอบ เสือคำราม แอปเปิล เสือเผ่น)</p>
+    <br>
+    <form action="" method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+
+    <br>
+	<table>
+    <!-- <table class="table" id="results-table"> -->
+		<tr>
+          {% block content %}{% endblock %}
+        </tr>
+    </table>
+	<p style="margin-left:0.5%;"><em> powered by school of engineering, Bangkok University</em></p>
+  </div>
+ 
+</div>
+
+</html>
+ 
